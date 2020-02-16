@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script rel = "script" src = "formValidation.js"></script>
+
+</head>
+<body>
+  <form name = "formValid" action = "formValidation.js" onsubmit = "return formValidation()" method = "POST">
+                <label> Event Type: <select type = " " name = "eType"></label>
+                    <option value = "option">Select </option>
+                    <option value = "bday">Event Bundle A</option>
+                    <option value = "anniv"> Event Bundle B</option>
+                    <option value = "seminar">Event Bundle C</option>
+                    <option value = "train"> Event Bundle D</option></select><br><br>
+                <label> Event Name: <input id = "eName" type = "name" name = "event"></label><br><br>
+                <label> Event Date: <input id = "eDate" type = "datestart" name = "date" ></label> to: 
+                <label> <input id = "dateEnd" type = "dateend" name = "enDate" ></label><br><br>
+                <label> Posting date:  <input id = "pDate" type = "postdate" name = "postingDate" ></label><br><br><br>
+               
+                <input type = "checkbox" name = "one" value = "YES"/>
+                <label> Is the Registration Required? </label><br>
+
+                <input type = "checkbox" name = "two" value = "YES"/>
+                <label>Is this event associated with any Family Programs?</label><br>
+
+                <input type = "checkbox" name = "three" value = "YES"/>
+                <label>Upon Registration Completion, Are Users to Receive an Auto Generated Email?</label><br>
+
+                <input type = "checkbox" name = "four" value = "YES"/>
+                <label>Is There a Point of Contact?</label><br>
+
+                <input type = "checkbox" name = "five" value = "YES"/>
+                <label>Is There a Hosting Command Point of Contact?</label><br><br>
+
+
+                <input type = "submit" value = "Submit">
+                </form>
+
+</body>
+</html>
